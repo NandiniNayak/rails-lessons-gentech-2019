@@ -9,5 +9,11 @@ class PagesController < ApplicationController
     end
 
     def contact
+        @user = "Derek"
+    end
+
+    def books
+        @user = " Dan Brown"
+        @books = ["Lost Symbol", "Da vinci code", "Angels & Demons"]
     end
 end

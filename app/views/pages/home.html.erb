@@ -1,4 +1,5 @@
-<%= render "shared/top_nav"%>
+<%= render "shared/top_nav", user: @user%>
+
 <h1> Home page !!!!</h1>
 <h1> hello <%= @user %>
 <% @names.each do |name| %>

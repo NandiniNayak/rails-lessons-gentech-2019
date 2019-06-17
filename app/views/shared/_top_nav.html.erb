@@ -1,5 +1,12 @@
+<% if defined?(user)%>
+    <h1> Hey <%= user%> </h1>
+<% else %>
+    <h1> You must log in </h1>
+<% end %>
+
 <nav>
 <%# link_to is a method that allows us to link to different urls %>
  <%= link_to("HOME", root_path)%>
  <%= link_to("CONTACT", contact_path)%>
+ <%= link_to("BOOKS", books_path)%>
 </nav>

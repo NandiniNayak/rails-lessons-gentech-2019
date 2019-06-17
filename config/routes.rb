@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get "/contact", to: "pages#contact", as: "contact"
 
+  get "/books", to: "pages#books", as: "books"
+
 end
