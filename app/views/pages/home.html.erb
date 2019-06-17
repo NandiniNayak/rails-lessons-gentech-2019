@@ -1,0 +1,8 @@
+<%= render "shared/top_nav"%>
+<h1> Home page !!!!</h1>
+<h1> hello <%= @user %>
+<% @names.each do |name| %>
+    <ul>
+        <li><%= name.capitalize %></li>
+    </ul>
+<% end %>
