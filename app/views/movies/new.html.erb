@@ -1,0 +1,17 @@
+<h1> Add Movie </h1>
+
+<%# forms allows us to send post requests %>
+<form action="/movies" method="POST">
+ <%# to avoid csrf token error, add the authenticity token as a hidden field %>
+   <input type="hidden" name="authenticity_token" value="<% form_authenticity_token%>">
+    <label> Title </label>
+    <br>
+    <input type="text" name="movie[:title]">
+    <br>
+    <label> Rating </label>
+    <br>
+    <input type="number" name="movie[:rating]" min="0" max= "10" >  
+    <br>
+    <br>
+    <input type="submit" value="SUBMIT">
+</form>
