@@ -1,0 +1,14 @@
+<h1> Add a new movie <h1>
+
+<form action="<%=movies_path %>" method="POST">
+    <%# pass authenticity token as a hidden field %>
+    <input type="hidden" name="authenticity_token" value="<%form_authenticity_token%>">
+    <label>Title</label>
+    <br>
+    <input type="text" name="movie[:title]">
+    <br>
+    <label>Rating</label>
+    <br>
+    <input type="number" name="movie[:rating]" min="1" max="10">
+    <input type="submit" value="Add Movie">
+</form>
